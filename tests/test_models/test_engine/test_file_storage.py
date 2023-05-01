@@ -1,4 +1,6 @@
-ontains the TestFileStorageDocs classes
+#!/usr/bin/python3
+"""
+Contains the TestFileStorageDocs classes
 """
 
 from datetime import datetime
@@ -111,4 +113,3 @@ class TestFileStorage(unittest.TestCase):
         with open("file.json", "r") as f:
             js = f.read()
         self.assertEqual(json.loads(string), json.loads(js))
-
